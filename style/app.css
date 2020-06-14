@@ -94,10 +94,6 @@ body{
     margin-bottom: 2.5em;
     font-weight: bold;
     color: #302F2F;
-    /*background: rgb(255,161,20);
-    background: linear-gradient(21deg, #FF9900 0%, #342002 66%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;*/
 }
 .top-section-footer{
     position: absolute; 
