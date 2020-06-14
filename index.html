@@ -11,6 +11,9 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="style/app.css">
         <title>The Wake Project</title>
+        <style>
+            #more {display: none;}
+        </style>
     </head>
     <body onload="showMainWebsite()">
         <div class="loader" id="loader">
@@ -83,22 +86,25 @@
                     
                     <p>
                         Which tells us the choosing the right feild is very important. One might think, so whats the problem, select the feild of passion and boom! you know you'll succeed.
+                        <span id="dots">...</span>
                     </p>
-                    
-                    <p>
-                        As students we came across this difficulty which we had while choosing the streams we wanted to have careers in. The Problem is that the traditional question - "Science? Commerce? or Arts?" is not the right question to ask to a student who is not even mature enough to understand that these are very broad areas and they have so many layers of complexity in them. 
-                    Practically viewing, there are many facets when it comes to deciding the first step out of school [10th boards]. And no doubt this lack of clarity towards (1) what is the right way one should make study related decisions ? (2) how to decide what we really want to do ?
-                    </p>
-                    
-                    <p>
-                        There exist a solution to this. Atleast it is something than can bring a student 5-10% closer to what they really want to choose.
-                    We also thought about it, and then sort of formulated a concept which is evident in quite a few places but is not viewed from a prespective we are looking at it. 
-                    We have named it - backward approach to initial decision making. 
-                    </p>
-            
-                    <p>
-                        What this approach is all about is neatly and concisely explained in the 'our model' section. 
-                    </p>
+                    <span id="more">
+                        <p>
+                            As students we came across this difficulty which we had while choosing the streams we wanted to have careers in. The Problem is that the traditional question - "Science? Commerce? or Arts?" is not the right question to ask to a student who is not even mature enough to understand that these are very broad areas and they have so many layers of complexity in them. 
+                        Practically viewing, there are many facets when it comes to deciding the first step out of school [10th boards]. And no doubt this lack of clarity towards (1) what is the right way one should make study related decisions ? (2) how to decide what we really want to do ?
+                        </p>
+                        
+                        <p>
+                            There exist a solution to this. Atleast it is something than can bring a student 5-10% closer to what they really want to choose.
+                        We also thought about it, and then sort of formulated a concept which is evident in quite a few places but is not viewed from a prespective we are looking at it. 
+                        We have named it - backward approach to initial decision making. 
+                        </p>
+                
+                        <p>
+                            What this approach is all about is neatly and concisely explained in the 'our model' section. 
+                        </p>
+                    </span>
+                    <button onclick="readMoreButton()" id="readMoreButton" class="btn btn-secondary">Read more</button>
                     <!--<div class="section-footer"></div>-->
                 </div>
             </div>
@@ -254,6 +260,8 @@
                 
             }
 
+            //--------------------------------
+
             //Get the button
             var mybutton = document.getElementById("myBtn");
             var mybutton2 = document.getElementById("myBtn2");
@@ -275,6 +283,24 @@
             function topFunction() {
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
+            }
+
+            //-----------------------------------
+
+            function readMoreButton() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("readMoreButton");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                }
             }
         </script>
     </body>
