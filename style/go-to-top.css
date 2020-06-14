@@ -1,0 +1,89 @@
+#myBtn {
+    display: none;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color:#302F2F; /*#ED9818;*/
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+#myBtn2 {
+    display: none;
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    bottom: 85px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color:#302F2F; /*#008C23*/
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+#myBtn2:hover {
+    background-color: #555;
+}
+
+@media only screen and (max-width: 600px) {
+    #myBtn {
+        display: none;
+        position: fixed;
+        height: 40px;
+        width: 40px;
+        bottom: 20px;
+        right: 11px;
+        z-index: 99;
+        font-size: 15px;
+        border: none;
+        outline: none;
+        background-color:#302F2F; /*#ED9818;*/
+        color: white;
+        cursor: pointer;
+        padding: 3px;
+        border-radius: 50%;
+    }
+    
+    #myBtn:hover {
+        background-color: #555;
+    }
+    
+    #myBtn2 {
+        display: none;
+        position: fixed;
+        height: 40px;
+        width: 40px;
+        bottom: 70px;
+        right: 11px;
+        z-index: 99;
+        font-size: 15px;
+        border: none;
+        outline: none;
+        background-color:#302F2F;/*#008C23;*/
+        color: white;
+        cursor: pointer;
+        padding: 3px;
+        border-radius: 50%;
+    }
+    
+    #myBtn2:hover {
+        background-color: #555;
+    }
+}
