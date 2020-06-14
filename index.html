@@ -34,9 +34,15 @@
                             <span class="badge badge-dark"><font class="newsline">Other News</font></span>
                         </marquee>
                     </div>
-                    <img src="images/logo-transparent.png" alt="" class="logo"> <br>
                     <p class="marquee">
-                        <span><img src="images/bird.gif" alt="" style="height: 20px; width: 40px; margin-right: 30px; border-radius: 40px;"></span>
+                        <span><img src="images/bird.gif" alt="" class="bird-flying"></span>
+                    </p>
+                    <img src="images/logo-transparent.png" alt="" class="logo"> <br>
+                    <p class="marquee" class="bird-flying-desktop-control">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span>
+                            <img src="images/bird.gif" class="bird-flying-desktop" style="" alt="">
+                        </span>
                     </p>
                     <table class="table table-bordered index-table shadow-border">
                         <tr>
@@ -254,9 +260,9 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <script>
             function showMainWebsite(){
-                console.log("Hello");
-                setTimeout(() => { document.getElementById("loader").className = "loader-none"; console.log("showing-page") }, 2000);
-                console.log("Goodbye!");
+                console.log("-");
+                setTimeout(() => { document.getElementById("loader").className = "loader-none"; console.log("--") }, 2000);
+                console.log("-");
                 
             }
 
